@@ -1,4 +1,4 @@
-.Header_top_line{
+.header__line{
     display: flex;
     height: 32px;
     width: 100%;
@@ -8,26 +8,26 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.line_left{
+.header__line svg path{
+    fill: rgb(155, 146, 132);
+}
+.header__line--left{
     display: flex;
     height: 16px;
     margin-left: 6%;
     width: 100%;
 }
-.Header_top_line svg path{
-    fill: rgb(155, 146, 132);
-}
-.left_Geolocation{
+.geolocation{
     display: flex;
     height: 16px;
     width: 158px;
     flex-wrap: nowrap;
 }
-.Geolocation_Icon{
+.geolocation__icon{
     display: flex;
     align-items: center;
 }
-.Geolocation_CityName{
+.geolocation__city{
     font-family: Inter;
     font-weight: 500;
     font-size: 14px;
@@ -45,28 +45,28 @@
         color: red;
     }
 }
-.left_headers_items{
+.navigator--left{
     display: flex;
     margin-left: 40px;
     height: 16px;
     align-items: center;
 }
-.items_headers, .items_headers_right{
+.navigator__container--left, .navigator__container--right{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
 }
-.items_headers svg, .items_headers_right svg {
+.navigator__container--left svg, .navigator__container--right svg{
     width: 16px; 
     height: auto;
     display: flex;
     flex-shrink: 0;
 }
-.items_headers:hover, .items_headers_right:hover{
+.navigator__container--left:hover, .navigator__container--right:hover{
     cursor: pointer;
 }
-.texts_headers{
+.navigator__texts{
     font-family: Inter;
     color: rgb(155, 146, 132);
     font-weight: 400;
@@ -79,51 +79,51 @@
     white-space: nowrap;
     text-decoration: none;
 }
-.headers_items2, .headers_items3, .headers_items4, .headers_items5{
+.navigator__hawk, .navigator__arena, .navigator__academy, .navigator__ticket{
     margin-left: 24px;
 }
 
 
-.line_right{
+.header__line--right{
     display: flex;
     justify-content: flex-end;
     height: 16px;
     margin-right: 8.5%;
     width: 100%;
 }
-.right_headers_items{
+.navigator--right{
     display: flex;
     height: 16px;
     align-items: center;
 }
-.items_headers_right{
+.navigator__container--right{
     gap: 4px;
 }
-.headers_items7, .headers_items8{
+.navigator__delivery, .navigator__contacts{
     margin-left: 24px;
 }
 
-.headers_items1:hover .items_icon1,
-.headers_items1:hover .items1_text,
-.headers_items2:hover .items_icon2,
-.headers_items2:hover .items2_text,
-.headers_items3:hover .items_icon3,
-.headers_items3:hover .items3_text,
-.headers_items4:hover .items_icon4,
-.headers_items4:hover .items4_text,
-.headers_items5:hover .items_icon5,
-.headers_items5:hover .items5_text,
-.headers_items6:hover .items_icon6,
-.headers_items6:hover .items6_text,
-.headers_items7:hover .items_icon7,
-.headers_items7:hover .items7_text,
-.headers_items8:hover .items_icon8,
-.headers_items8:hover .items8_text{
+.navigator__site:hover .site__icon--web,
+.navigator__site:hover .navigator__site--text,
+.navigator__hawk:hover .navigator__hawk--icon,
+.navigator__hawk:hover .navigator__hawk--text,
+.navigator__arena:hover .navigator__arena--icon,
+.navigator__arena:hover .navigator__arena--text,
+.navigator__academy:hover .navigator__academy--icon,
+.navigator__academy:hover .navigator__academy--text,
+.navigator__ticket:hover .navigator__ticket--icon,
+.navigator__ticket:hover .navigator__ticket--text,
+.navigator__blog:hover .navigator__blog--icon,
+.navigator__blog:hover .navigator__blog--text,
+.navigator__delivery:hover .navigator__delivery--icon,
+.navigator__delivery:hover .navigator__delivery--text,
+.navigator__contacts:hover .navigator__contacts--icon,
+.navigator__contacts:hover .navigator__contacts--text{
     transition: color 0.4s ease, fill 0.4s ease;
     color: red;
     fill: red;
 }
 
-.headers_items3:hover .items_icon_arena {
+.navigator__arena:hover .navigator__arena--extraicon {
     fill: rgb(239, 189, 189);
 }
