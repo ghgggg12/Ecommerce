@@ -1,0 +1,144 @@
+.Header_top_line{
+    display: flex;
+    height: 32px;
+    width: 100%;
+    padding: 8px 0 8px 0;
+    background-color: rgb(233, 223, 194);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.line_left{
+    display: flex;
+    justify-content: flex-start;
+    height: 16px;
+    margin-left: 6%;
+    width: 100%;
+}
+path{
+    fill: rgb(155, 146, 132);
+}
+.left_Geolocation{
+    display: flex;
+    height: 16px;
+    width: 158px;
+    flex-wrap: nowrap;
+}
+.Geolocation_CityName{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    vertical-align: middle;
+    margin-left: 4px;
+    text-align: left;
+    text-wrap-mode: nowrap;
+
+    transition: color 0.1s ease;
+
+    &:hover{
+        cursor: pointer;
+        color: red;
+    }
+}
+.left_headers_items{
+    display: flex;
+    margin-left: 40px;
+    height: 16px;
+    align-items: center;
+}
+.items_headers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.items_headers svg {
+    width: 16px; 
+    height: auto;
+    display: flex;
+}
+.items_headers:hover{
+    cursor: pointer;
+}
+.headers_items1:hover .items_icon1, .headers_items1:hover .items1_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.icon_headers1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.texts_headers{
+    font-family: Inter;
+    color: rgb(155, 146, 132);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    vertical-align: middle;
+    margin-left: 4px;
+    text-align: left;
+    text-wrap-mode: nowrap;
+    text-decoration: dashed;
+}
+.headers_items2, .headers_items3, .headers_items4, .headers_items5{
+    margin-left: 24px;
+}
+.headers_items2:hover .items_icon2, .headers_items2:hover .items2_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.headers_items3:hover .items_icon3, .headers_items3:hover .items3_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.headers_items3:hover .items_icon_arena{
+    fill: rgb(239, 189, 189);
+}
+.headers_items4:hover .items_icon4, .headers_items4:hover .items4_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.headers_items5:hover .items_icon5, .headers_items5:hover .items5_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+
+
+.line_right{
+    display: flex;
+    justify-content: flex-end;
+    height: 16px;
+    margin-right: 8%;
+    width: 100%;
+}
+.right_headers_items{
+    display: flex;
+    height: 16px;
+    align-items: center;
+}
+.headers_items7, .headers_items8{
+    margin-left: 24px;
+}
+.headers_items6:hover .items_icon6, .headers_items6:hover .items6_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.headers_items7:hover .items_icon7, .headers_items7:hover .items7_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.headers_items8:hover .items_icon8, .headers_items8:hover .items8_text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
