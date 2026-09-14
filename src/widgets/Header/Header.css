@@ -10,12 +10,11 @@
 }
 .line_left{
     display: flex;
-    justify-content: flex-start;
     height: 16px;
     margin-left: 6%;
     width: 100%;
 }
-path{
+.Header_top_line svg path{
     fill: rgb(155, 146, 132);
 }
 .left_Geolocation{
@@ -23,6 +22,10 @@ path{
     height: 16px;
     width: 158px;
     flex-wrap: nowrap;
+}
+.Geolocation_Icon{
+    display: flex;
+    align-items: center;
 }
 .Geolocation_CityName{
     font-family: Inter;
@@ -33,7 +36,7 @@ path{
     vertical-align: middle;
     margin-left: 4px;
     text-align: left;
-    text-wrap-mode: nowrap;
+    white-space: nowrap;
 
     transition: color 0.1s ease;
 
@@ -48,28 +51,20 @@ path{
     height: 16px;
     align-items: center;
 }
-.items_headers{
+.items_headers, .items_headers_right{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-content: center;
 }
-.items_headers svg {
+.items_headers svg, .items_headers_right svg {
     width: 16px; 
     height: auto;
     display: flex;
+    flex-shrink: 0;
 }
-.items_headers:hover{
+.items_headers:hover, .items_headers_right:hover{
     cursor: pointer;
-}
-.headers_items1:hover .items_icon1, .headers_items1:hover .items1_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
-}
-.icon_headers1{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
 }
 .texts_headers{
     font-family: Inter;
@@ -81,34 +76,11 @@ path{
     vertical-align: middle;
     margin-left: 4px;
     text-align: left;
-    text-wrap-mode: nowrap;
-    text-decoration: dashed;
+    white-space: nowrap;
+    text-decoration: none;
 }
 .headers_items2, .headers_items3, .headers_items4, .headers_items5{
     margin-left: 24px;
-}
-.headers_items2:hover .items_icon2, .headers_items2:hover .items2_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
-}
-.headers_items3:hover .items_icon3, .headers_items3:hover .items3_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
-}
-.headers_items3:hover .items_icon_arena{
-    fill: rgb(239, 189, 189);
-}
-.headers_items4:hover .items_icon4, .headers_items4:hover .items4_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
-}
-.headers_items5:hover .items_icon5, .headers_items5:hover .items5_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
 }
 
 
@@ -116,7 +88,7 @@ path{
     display: flex;
     justify-content: flex-end;
     height: 16px;
-    margin-right: 8%;
+    margin-right: 8.5%;
     width: 100%;
 }
 .right_headers_items{
@@ -124,21 +96,34 @@ path{
     height: 16px;
     align-items: center;
 }
+.items_headers_right{
+    gap: 4px;
+}
 .headers_items7, .headers_items8{
     margin-left: 24px;
 }
-.headers_items6:hover .items_icon6, .headers_items6:hover .items6_text{
+
+.headers_items1:hover .items_icon1,
+.headers_items1:hover .items1_text,
+.headers_items2:hover .items_icon2,
+.headers_items2:hover .items2_text,
+.headers_items3:hover .items_icon3,
+.headers_items3:hover .items3_text,
+.headers_items4:hover .items_icon4,
+.headers_items4:hover .items4_text,
+.headers_items5:hover .items_icon5,
+.headers_items5:hover .items5_text,
+.headers_items6:hover .items_icon6,
+.headers_items6:hover .items6_text,
+.headers_items7:hover .items_icon7,
+.headers_items7:hover .items7_text,
+.headers_items8:hover .items_icon8,
+.headers_items8:hover .items8_text{
     transition: color 0.4s ease, fill 0.4s ease;
     color: red;
     fill: red;
 }
-.headers_items7:hover .items_icon7, .headers_items7:hover .items7_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
-}
-.headers_items8:hover .items_icon8, .headers_items8:hover .items8_text{
-    transition: color 0.4s ease, fill 0.4s ease;
-    color: red;
-    fill: red;
+
+.headers_items3:hover .items_icon_arena {
+    fill: rgb(239, 189, 189);
 }
