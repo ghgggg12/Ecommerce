@@ -103,27 +103,27 @@
     margin-left: 24px;
 }
 
-.navigator__site:hover .site__icon--web,
+.navigator__site:hover .navigator__site--icon path,
 .navigator__site:hover .navigator__site--text,
-.navigator__hawk:hover .navigator__hawk--icon,
+.navigator__hawk:hover .navigator__hawk--icon path,
 .navigator__hawk:hover .navigator__hawk--text,
 .navigator__arena:hover .navigator__arena--icon,
 .navigator__arena:hover .navigator__arena--text,
-.navigator__academy:hover .navigator__academy--icon,
+.navigator__academy:hover .navigator__academy--icon path,
 .navigator__academy:hover .navigator__academy--text,
-.navigator__ticket:hover .navigator__ticket--icon,
+.navigator__ticket:hover .navigator__ticket--icon path,
 .navigator__ticket:hover .navigator__ticket--text,
-.navigator__blog:hover .navigator__blog--icon,
+.navigator__blog:hover .navigator__blog--icon path,
 .navigator__blog:hover .navigator__blog--text,
-.navigator__delivery:hover .navigator__delivery--icon,
+.navigator__delivery:hover .navigator__delivery--icon path,
 .navigator__delivery:hover .navigator__delivery--text,
-.navigator__contacts:hover .navigator__contacts--icon,
+.navigator__contacts:hover .navigator__contacts--icon path,
 .navigator__contacts:hover .navigator__contacts--text{
     transition: color 0.4s ease, fill 0.4s ease;
     color: red;
     fill: red;
 }
 
-.navigator__arena:hover .navigator__arena--extraicon {
+.navigator__arena:hover .navigator__arena--extraicon{
     fill: rgb(239, 189, 189);
 }
