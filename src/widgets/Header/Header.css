@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
 }
-.geolocation__city{
+.geolocation__text{
     font-family: Inter;
     font-weight: 500;
     font-size: 14px;
@@ -66,7 +66,7 @@
 .navigator__container--left:hover, .navigator__container--right:hover{
     cursor: pointer;
 }
-.navigator__texts{
+.navigator__text{
     font-family: Inter;
     color: rgb(155, 146, 132);
     font-weight: 400;
@@ -103,27 +103,21 @@
     margin-left: 24px;
 }
 
-.navigator__site:hover .navigator__site--icon path,
-.navigator__site:hover .navigator__site--text,
-.navigator__hawk:hover .navigator__hawk--icon path,
-.navigator__hawk:hover .navigator__hawk--text,
-.navigator__arena:hover .navigator__arena--icon,
-.navigator__arena:hover .navigator__arena--text,
-.navigator__academy:hover .navigator__academy--icon path,
-.navigator__academy:hover .navigator__academy--text,
-.navigator__ticket:hover .navigator__ticket--icon path,
-.navigator__ticket:hover .navigator__ticket--text,
-.navigator__blog:hover .navigator__blog--icon path,
-.navigator__blog:hover .navigator__blog--text,
-.navigator__delivery:hover .navigator__delivery--icon path,
-.navigator__delivery:hover .navigator__delivery--text,
-.navigator__contacts:hover .navigator__contacts--icon path,
-.navigator__contacts:hover .navigator__contacts--text{
+.navigator__container--left:hover .navigator__icon path,
+.navigator__container--left:hover .navigator__text{
+    transition: color 0.4s ease, fill 0.4s ease;
+    color: red;
+    fill: red;
+}
+.navigator__container--right:hover .navigator__icon path,
+.navigator__container--right:hover .navigator__text{
     transition: color 0.4s ease, fill 0.4s ease;
     color: red;
     fill: red;
 }
 
-.navigator__arena:hover .navigator__arena--extraicon{
+.navigator__arena:hover .navigator__arena--extraicon,
+.navigator__arena:hover .navigator__icon--arena{
+    color: red;
     fill: rgb(239, 189, 189);
 }
