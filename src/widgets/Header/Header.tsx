@@ -54,8 +54,8 @@ export const Header = () => {
                     </div>
                 </nav>
             </div>
-            <nav className='header__line--right'>
-                <div className='navigator--right'>
+            <div className='header__line--right'>
+                <nav className='navigator--right'>
                     <div className='navigator__blog navigator__container--right'>
                         <span className='navigator__icon'>
                             <BlogIcon />
@@ -77,8 +77,8 @@ export const Header = () => {
 
                         <a href='https://shop.hawk.ru/contacts/' rel="noopener noreferrer" target='_blank' className='navigator__text'>Контакты</a>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
   );
