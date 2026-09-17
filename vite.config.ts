@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import path from 'node:path'
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@shared': path.resolve(__dirname, './src/shared'),
-      '@widgets': path.resolve(__dirname, './src/widgets'),
-      '@': path.resolve(__dirname, './src'),
+      '@shared': path.resolve(import.meta.dirname, './src/shared'),
+      '@widgets': path.resolve(import.meta.dirname, './src/widgets'),
+      '@': path.resolve(import.meta.dirname, './src'),
     },
   },
 })
