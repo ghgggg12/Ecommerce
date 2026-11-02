@@ -1,0 +1,9 @@
+body{
+    height: 2000px;
+    width: auto;
+    scrollbar-width: 0px;
+}
+::selection{
+    color: white;
+    background-color: #008afc;
+}
