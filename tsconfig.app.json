@@ -11,6 +11,7 @@
     "paths": {
       "@shared/*": ["./src/shared/*"],
       "@widgets/*": ["./src/widgets/*"],
+      "@App/*": ["./src/App/*"],
       "@/*": ["./src/*"]
     },
 
