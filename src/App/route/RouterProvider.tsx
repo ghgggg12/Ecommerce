@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router'
-import { LayoutMain } from '../layouts/HeaderLayout'
+import { LayoutMain } from '@App/layouts/HeaderLayout'
 import { Air } from '@widgets/Air/Air'
-import { Main } from '@widgets/Main/Main';
+import { Main } from '@App/Main/index'
 
 export const Routes = createBrowserRouter([
     {
@@ -15,7 +15,7 @@ export const Routes = createBrowserRouter([
             { path: 'login', element: <Air /> },
             { path: 'like', element: <Air /> },
             { path: 'search', element: <Air /> },
-            { path: 'busket', element: <Air /> },
+            { path: 'basket', element: <Air /> },
         ],
     },
 ])

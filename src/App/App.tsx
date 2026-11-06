@@ -4,7 +4,7 @@ import { Routes } from './route/RouterProvider';
 export const App = () => {
   return (
     <>
-        <RouterProvider router={Routes} />
+      <RouterProvider router={Routes} />
     </>
   )
 }

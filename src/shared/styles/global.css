@@ -1,7 +1,6 @@
 body{
     height: auto;
     width: auto;
-    scrollbar-width: 0px;
 }
 ::selection{
     color: white;

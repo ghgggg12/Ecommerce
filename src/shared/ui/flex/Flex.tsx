@@ -1,5 +1,5 @@
 import React from 'react';
-import type { FlexProps } from './types.ts';
+import type { FlexProps } from './types/types';
 
 export const Flex = ({
   as: Tag = 'div',

@@ -2,10 +2,11 @@ import './Navigation.css';
 import Button from '@mui/material/Button';
 import { Icons } from '@shared/assets/svg/index';
 import { NavLink } from 'react-router';
-import { useState } from 'react';
+import { useNav } from '@App/context/NavContext';
+import AppBar from '@mui/material/AppBar';
 
 export const Navigation = () => {
-    const [active, setActive] = useState('home');
+    const { active, setActive } = useNav();
 
     const buttons = [
         { id: 'home', label: 'Home', to: '/' },
@@ -17,13 +18,13 @@ export const Navigation = () => {
         { id: 'login', label: <Icons.LoginIcon />, to: '/login' },
         { id: 'like', label: <Icons.LikeIcon />, to: '/like' },
         { id: 'search', label: <Icons.SearchIcon />, to: '/search' },
-        { id: 'busket', label: <Icons.BusketIcon />, to: '/busket' }
+        { id: 'basket', label: <Icons.BusketIcon />, to: '/basket' }
     ];
 
   return (
-    <nav className='Navigation'>
+    <AppBar position="sticky" className='Navigation'>
         <div className='Navigation__main'>
-            <a href='' className='Navigation__brandLogo'>
+            <a href='/' className='Navigation__brandLogo'>
                 <div className='Navigation__logo'>
                     <Icons.MainLogo />
                 </div>
@@ -50,6 +51,6 @@ export const Navigation = () => {
                 ))}
             </div>
         </div>
-    </nav>
+    </AppBar>
   );
 };
