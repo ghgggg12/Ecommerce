@@ -1,8 +1,0 @@
-body{
-    height: auto;
-    width: auto;
-}
-::selection{
-    color: white;
-    background-color: #008afc;
-}
