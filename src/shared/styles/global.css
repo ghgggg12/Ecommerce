@@ -1,0 +1,9 @@
+body{
+    height: auto;
+    width: auto;
+    background-color: oklch(1 0 0);
+}
+::selection{
+    color: white;
+    background-color: #008afc;
+}

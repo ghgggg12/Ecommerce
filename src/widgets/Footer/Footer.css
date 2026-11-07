@@ -1,0 +1,187 @@
+.Footer{
+    display: flex;
+    padding: 56px 0 40px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Footer__line1{
+    position: relative;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 0 0 56px;
+    width: 100%;
+}
+.Footer__inner{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.Footer__sections{
+    display: flex;
+    column-gap: 32px;
+}
+.Footer__section{
+    width: 288px;
+}
+.Footer__icon{
+    display: flex;
+    column-gap: 8px;
+    cursor: pointer;
+}
+.Footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: oklch(0.546 0.245 262.881);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 14px;
+}
+.Footer__texts--information{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.Footer__header{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 800;
+    font-size: 16px;
+    color: oklch(0.208 0.042 265.755);
+}
+.Footer__about{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 12px;
+    color: oklch(0.554 0.046 257.417);
+}
+.Footer__information{
+    margin-top: 12px;
+    color: oklch(0.446 0.043 257.281);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+}
+.Footer__buttons{
+    display: flex;
+    margin-top: 16px;
+    column-gap: 8px;
+}
+.MuiButton-root.link__button{
+    padding: 0;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 14px;
+    color: oklch(0.145 0 0);
+    outline-color: oklab(0.708 0 0 / 0.5);
+}
+.Footer__headers{
+    color: oklch(0.208 0.042 265.755);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.Footer__texts--links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 12px;
+}
+.Footer__text--link{
+    text-decoration: none;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    color: oklch(0.446 0.043 257.281);
+
+    &:hover{
+        color: oklch(54.6% .245 262.881);
+    }
+}
+.Footer__shop{
+    display: flex;
+    flex-direction: column;
+}
+.Footer__help{
+    display: flex;
+    flex-direction: column;
+}
+.Footer__about--newsletter{
+    text-decoration: none;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    color: oklch(0.446 0.043 257.281);
+    margin-top: 12px;
+}
+.Footer__buttons--newsletter{
+    display: flex;
+    margin-top: 16px;
+    column-gap: 8px;
+}
+.Footer__input{
+    display: block;
+    padding: 8px 12px;
+    border-radius: 14px;
+    outline: oklch(0.922 0 0);
+    border-color: oklch(0.922 0 0);
+    border-style: solid;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    font-weight: 400;
+    width: 186px;
+}
+.Footer__input:focus{
+    outline: oklch(0.708 0 0 / 0.6) 2px solid;
+    border-color: oklch(0.708 0 0 / 0.8);
+}
+.MuiButton-root.Footer__button{
+    height: 40px;
+    background-color: oklch(0.546 0.245 262.881);
+    border-radius: 14px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    width: 93px;
+}
+.Footer__extra--newsletter{
+    text-decoration: none;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 12px;
+    color: oklch(0.554 0.046 257.417);
+    margin-top: 8px;
+}
+
+.Footer__line2{
+    height: 1px;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 32px 0;
+    width: 100%;
+}
+
+.Footer__row{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.Footer__text--copyright{
+    color:oklch(0.554 0.046 257.417);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+}
+.Footer__buttons--privacy{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    column-gap: 16px;
+}
+.Footer__button{
+    color:oklch(0.446 0.043 257.281);
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 14px;
+    text-decoration: none;
+}
