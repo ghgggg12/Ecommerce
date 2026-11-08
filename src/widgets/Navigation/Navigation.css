@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     max-width: 1250px;
-    margin: 0 auto;
+    margin: var(--auto-margin);
     column-gap: 242px;
 }
 .Navigation__brandLogo{
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: oklch(49.498% 0.23865 264.359);
+    background-image: linear-gradient(to right bottom, oklch(0.546 0.245 262.881) 0%, oklch(0.488 0.243 264.376) 100%);
     width: 44px;
     height: 44px;
     border-radius: 16px;
@@ -43,14 +43,14 @@
     line-height: 19px;
 }
 .Navigation__text--main{
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-weight: 800;
     font-size: 16px;
     color: oklch(20.8% .042 265.755);
     letter-spacing: 0px;
 }
 .Navigation__text--other{
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-size: 10px;
     color: oklch(55.4% .046 257.417);
 }
@@ -69,7 +69,7 @@
     letter-spacing: 0px;
 
     &:hover{
-        color: oklch(54.6% .245 262.881);
+        color: var(--chart-2);
         transition: color 0.3s ease;
     }
 }
@@ -77,7 +77,7 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
-    color: oklch(54.6% .245 262.881);
+    color: var(--chart-2);
     transition: color 0.3s ease;
 }
 .MuiButton-root.Navigation__text--buttons:hover{
@@ -100,12 +100,12 @@
     padding: 0;
     
     &:hover{
-        color: oklch(54.6% .245 262.881);
+        color: var(--chart-2);
         transition: color 0.3s ease;
     }
 }
 .MuiButton-root.Navigation__icons--buttons.active svg{
-    color: oklch(54.6% .245 262.881);
+    color: var(--chart-2);
     transition: color 0.3s ease;
 }
 .MuiButton-root.Navigation__icons--buttons .MuiTouchRipple-root{

@@ -5,7 +5,7 @@
     width: 100%;
     height: auto;
     max-width: 1320px;
-    margin: 0 auto;
+    margin: var(--auto-margin);
 }
 .Arrivals__texts{
     display: flex;
@@ -14,7 +14,7 @@
     padding: 40px 0;
 }
 .Arrivals__header{
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-weight: 400;
     font-size: 30px;
     text-transform:uppercase
@@ -31,7 +31,7 @@
     column-gap: 8px;
 }
 .Arrivals__about{
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-size: 16px;
     color: rgba(78, 73, 73, 0.7);
 }

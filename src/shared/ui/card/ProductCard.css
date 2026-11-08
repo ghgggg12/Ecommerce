@@ -19,17 +19,17 @@
     align-items: center;
     width: 50px;
     height: 28px;
-    border-radius: 3.35544e+07px;
+    border-radius: var(--border-radius);
     z-index: 3;
     position: absolute;
     object-fit: contain;
     top: 16px;
     left: 16px;
     color: white;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-size: 12px;
     font-weight: 700;
-    background-image: linear-gradient(to right, oklch(0.546 0.245 262.881) 0%, oklch(0.488 0.243 264.376) 100%);
+    background-image: var(--background-card1);
 }
 .product__img--buttons{
     display: flex;
@@ -53,7 +53,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 50%, transparent);
+    background: var(--background-card2);
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
@@ -72,8 +72,8 @@
     top: 40%;
     right: 59%;
     backdrop-filter: blur(12px);
-    background-color: oklab(0.999994 0.0000455678 0.0000200868 / 0.85);
-    border-radius: 3.35544e+07px;
+    background-color: var(--background-card3);
+    border-radius: var(--border-radius);
     min-width: 44px;
     height: 44px;
     padding: 12px;
@@ -110,21 +110,21 @@
     height: 78px;
 }
 .product__title{
-    color: oklch(0.208 0.042 265.755);
+    color: var(--chart-3);
     cursor: pointer;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 6px;
     margin-top: 16px;
 }
 .product__card:hover .product__title{
-    color: oklch(42.542% 0.19395 263.647);
+    color: var(--chart-2);
 }
 .product__description{
     color: oklch(0.446 0.043 257.281);
     cursor: pointer;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-size: 12px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -133,9 +133,9 @@
     line-height: 16px;
 }
 .product__price{
-    color: oklch(0.208 0.042 265.755);
+    color: var(--chart-3);
     cursor: pointer;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--deafult-font);
     font-size: 18px;
     font-weight: 700;
 }
@@ -145,8 +145,8 @@
     width: 100%;
     height: 48px;
     border-radius: 0 0 16px 16px;
-    background-image: linear-gradient(to right, oklch(0.546 0.245 262.881) 0%, oklch(0.488 0.243 264.376) 100%);
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image: var(--background-card1);
+    font-family: var(--deafult-font);
     font-size: 14px;
     text-transform: none;
 }
@@ -155,6 +155,6 @@
     height: 16px;
 }
 .MuiButton-root.product__button--basket:hover{
-    background-image: linear-gradient(to right, oklch(48.907% 0.28084 265.399) 0%, oklch(44.731% 0.26985 265.822) 100%);
+    background-image: var(--background-card4);
     box-shadow: none;
 }
