@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right bottom, oklch(0.546 0.245 262.881) 0%, oklch(0.488 0.243 264.376) 100%);
+    background-image: linear-gradient(to right bottom, #155dfc 0%, #1447e6 100%);
     width: 44px;
     height: 44px;
     border-radius: 16px;
@@ -46,13 +46,13 @@
     font-family: var(--deafult-font);
     font-weight: 800;
     font-size: 16px;
-    color: oklch(20.8% .042 265.755);
+    color: #0f172b;
     letter-spacing: 0px;
 }
 .Navigation__text--other{
     font-family: var(--deafult-font);
     font-size: 10px;
-    color: oklch(55.4% .046 257.417);
+    color: #62748e;
 }
 .Navigation__buttons{
     display: flex;
@@ -64,7 +64,7 @@
 .MuiButton-root.Navigation__text--buttons{
     font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-weight: 500;
-    color: oklch(37.2% .044 257.287);
+    color: #314158;
     font-size: 16px;
     letter-spacing: 0px;
 
@@ -95,7 +95,7 @@
     min-width: 20px;
 }
 .MuiButton-root.Navigation__icons--buttons svg{
-    color: oklch(37.2% .044 257.287);
+    color: #314158;
     width: 20px;
     padding: 0;
     

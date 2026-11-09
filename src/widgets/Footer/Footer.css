@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: oklch(0.546 0.245 262.881);
+    background-color: #155dfc;
     font-family: var(--deafult-font);
     color: white;
     font-weight: 700;
@@ -58,11 +58,11 @@
 .Footer__about{
     font-family: var(--deafult-font);
     font-size: 12px;
-    color: oklch(0.554 0.046 257.417);
+    color: #62748e;
 }
 .Footer__information{
     margin-top: 12px;
-    color: oklch(0.446 0.043 257.281);
+    color: #45556c;
     font-family: var(--deafult-font);
     font-size: 14px;
 }
@@ -76,7 +76,7 @@
     min-width: 36px;
     min-height: 36px;
     border-radius: 14px;
-    color: oklch(0.145 0 0);
+    color: #0a0a0a;
     outline-color: oklab(0.708 0 0 / 0.5);
 }
 .Footer__headers{
@@ -95,7 +95,7 @@
     text-decoration: none;
     font-family: var(--deafult-font);
     font-size: 14px;
-    color: oklch(0.446 0.043 257.281);
+    color: #45556c;
 
     &:hover{
         color: var(--chart-2);
@@ -113,7 +113,7 @@
     text-decoration: none;
     font-family: var(--deafult-font);
     font-size: 14px;
-    color: oklch(0.446 0.043 257.281);
+    color: #45556c;
     margin-top: 12px;
 }
 .Footer__buttons--newsletter{
@@ -125,8 +125,8 @@
     display: block;
     padding: 8px 12px;
     border-radius: 14px;
-    outline: oklch(0.922 0 0);
-    border-color: oklch(0.922 0 0);
+    outline: #e5e5e5;
+    border-color: #e5e5e5;
     border-style: solid;
     font-family: var(--deafult-font);
     font-size: 14px;
@@ -134,12 +134,12 @@
     width: 186px;
 }
 .Footer__input:focus{
-    outline: oklch(0.708 0 0 / 0.6) 2px solid;
-    border-color: oklch(0.708 0 0 / 0.8);
+    outline: #a1a1a1 2px solid;
+    border-color: #a1a1a1;
 }
 .MuiButton-root.Footer__button{
     height: 40px;
-    background-color: oklch(0.546 0.245 262.881);
+    background-color: #155dfc;
     border-radius: 14px;
     font-family: var(--deafult-font);
     font-size: 14px;
@@ -151,7 +151,7 @@
     text-decoration: none;
     font-family: var(--deafult-font);
     font-size: 12px;
-    color: oklch(0.554 0.046 257.417);
+    color: #62748e;
     margin-top: 8px;
 }
 
@@ -169,7 +169,7 @@
     justify-content: flex-start;
 }
 .Footer__text--copyright{
-    color:oklch(0.554 0.046 257.417);
+    color:#62748e;
     font-family: var(--deafult-font);
     font-size: 14px;
 }
@@ -180,7 +180,7 @@
     column-gap: 16px;
 }
 .Footer__button{
-    color:oklch(0.446 0.043 257.281);
+    color:#45556c;
     font-family: var(--deafult-font);
     font-size: 14px;
     text-decoration: none;

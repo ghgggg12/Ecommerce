@@ -42,7 +42,7 @@
 .product__img{
     display: flex;
     object-fit: cover;
-    background-color: oklch(0.968 0.007 247.896);
+    background-color: #f1f5f9;
     height: 208px;
     transition: transform 0.5s ease;
 }
@@ -88,7 +88,7 @@
 .MuiButton-root.product__button svg{
     height: 20px;
     width: 20px;
-    color: oklch(0.372 0.044 257.287);
+    color: #314158;
 }
 .MuiButton-root.product__button:hover{
     transform: scale(1.1);
@@ -122,7 +122,7 @@
     color: var(--chart-2);
 }
 .product__description{
-    color: oklch(0.446 0.043 257.281);
+    color: #45556c;
     cursor: pointer;
     font-family: var(--deafult-font);
     font-size: 12px;
