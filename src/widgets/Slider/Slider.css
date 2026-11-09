@@ -95,7 +95,7 @@
     opacity: 1;
 }
 .Slider .swiper-pagination-bullet-active{
-    background: rgb(59, 130, 246);
+    background: #3b82f6;
     border-radius: 999px;
     opacity: 1;
     width: 22px;
