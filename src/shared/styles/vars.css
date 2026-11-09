@@ -22,6 +22,6 @@
     /*Card*/
     --background-card1: linear-gradient(to right, #155dfc 0%, #1447e6 100%);
     --background-card2: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 50%, transparent);
-    --background-card3: oklab(0.999994 0.0000455678 0.0000200868 / 0.85);
+    --background-card3: #ffffffd9;
     --background-card4: linear-gradient(to right, #1538fb 0%, #1429e6 100%);
 }
