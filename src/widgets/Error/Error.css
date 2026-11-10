@@ -1,0 +1,19 @@
+.Error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Error h1{
+    text-transform: uppercase;
+    font-family:var(--deafult-font);
+    font-weight: 800;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.Error p{
+    text-transform: uppercase;
+    font-family: var(--deafult-font);
+    font-weight: 300;
+    font-size: 20px;
+}

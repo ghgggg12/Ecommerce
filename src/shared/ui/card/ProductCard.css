@@ -1,0 +1,160 @@
+.product__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease;
+
+    &:hover{
+        box-shadow: 2px 2px 42px rgba(55, 59, 50, 0.5);
+    }
+}
+.product__badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 28px;
+    border-radius: var(--border-radius);
+    z-index: 3;
+    position: absolute;
+    object-fit: contain;
+    top: 16px;
+    left: 16px;
+    color: white;
+    font-family: var(--deafult-font);
+    font-size: 12px;
+    font-weight: 700;
+    background-image: var(--background-card1);
+}
+.product__img--buttons{
+    display: flex;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+    overflow: hidden;
+    height: 208px;
+    width: 300px;
+}
+.product__img{
+    display: flex;
+    object-fit: cover;
+    background-color: #f1f5f9;
+    height: 208px;
+    transition: transform 0.5s ease;
+}
+.product__card:hover .product__img{
+    transform: scale(1.1);
+}
+.product__img--buttons::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--background-card2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+.product__card:hover .product__img--buttons::before{
+    opacity: 1;
+}
+.MuiButton-root.product__button{
+    display: none;
+    position: absolute;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    top: 40%;
+    right: 59%;
+    backdrop-filter: blur(12px);
+    background-color: var(--background-card3);
+    border-radius: var(--border-radius);
+    min-width: 44px;
+    height: 44px;
+    padding: 12px;
+    z-index: 2;
+    transition: transform 0.15s ease-in-out, opacity 0.3s ease, visibility 0.3s ease;
+}
+.product__card:hover .MuiButton-root.product__button{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.MuiButton-root.product__button svg{
+    height: 20px;
+    width: 20px;
+    color: #314158;
+}
+.MuiButton-root.product__button:hover{
+    transform: scale(1.1);
+    box-shadow: none;
+}
+.MuiButton-root.product__button .MuiTouchRipple-root{
+    opacity: 0;
+}
+.MuiButton-root.product__button--check{
+    right: 30%;
+}
+.product__texts{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 5px;
+    row-gap: 40px;
+}
+.product__text--main{
+    height: 78px;
+}
+.product__title{
+    color: var(--chart-3);
+    cursor: pointer;
+    font-family: var(--deafult-font);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+.product__card:hover .product__title{
+    color: var(--chart-2);
+}
+.product__description{
+    color: #45556c;
+    cursor: pointer;
+    font-family: var(--deafult-font);
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 16px;
+}
+.product__price{
+    color: var(--chart-3);
+    cursor: pointer;
+    font-family: var(--deafult-font);
+    font-size: 18px;
+    font-weight: 700;
+}
+.MuiButton-root.product__button--basket{
+    display: flex;
+    column-gap: 8px;
+    width: 100%;
+    height: 48px;
+    border-radius: 0 0 16px 16px;
+    background-image: var(--background-card1);
+    font-family: var(--deafult-font);
+    font-size: 14px;
+    text-transform: none;
+}
+.product__button--basket svg{
+    width: 16px;
+    height: 16px;
+}
+.MuiButton-root.product__button--basket:hover{
+    background-image: var(--background-card4);
+    box-shadow: none;
+}

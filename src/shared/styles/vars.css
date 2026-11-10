@@ -1,0 +1,27 @@
+:root{
+    /*Fonts*/
+    --deafult-font: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+    /*Colors*/
+    --background: #ffffff;
+    --chart-1: #5d3ee9;
+    --chart-2: #155dfc;
+    --chart-3: #0f172b;
+
+    /*auto Margin*/
+    --auto-margin: 0 auto;
+
+    /*Radius*/
+    --border-radius: 3.35544e+07px; 
+
+    /*Slider*/
+    --background-slide1: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1920&q=80') no-repeat center / cover;
+    --background-slide2: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1920&q=80') no-repeat center / cover;
+    --background-slide3: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1920&q=80') no-repeat center / cover;
+
+    /*Card*/
+    --background-card1: linear-gradient(to right, #155dfc 0%, #1447e6 100%);
+    --background-card2: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 50%, transparent);
+    --background-card3: #ffffffd9;
+    --background-card4: linear-gradient(to right, #1538fb 0%, #1429e6 100%);
+}
