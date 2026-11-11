@@ -1,5 +1,6 @@
 import './Footer.css';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router';
 import { Icons } from '@shared/assets/svg/index';
 
 export const Footer = () => {
@@ -43,19 +44,19 @@ export const Footer = () => {
                 <section className='Footer__shop Footer__section'>
                     <p className='Footer__headers'>Shop</p>
                     <div className='Footer__texts--links'>
-                        <a href='/' className='Footer__text--link'>All Products</a>
-                        <a href='/' className='Footer__text--link'>Popular</a>
-                        <a href='/' className='Footer__text--link'>New Arrivals</a>
-                        <a href='/' className='Footer__text--link'>Deals</a>
+                        <Link to='/' className='Footer__text--link'>All Products</Link>
+                        <Link to='/' className='Footer__text--link'>Popular</Link>
+                        <Link to='/' className='Footer__text--link'>New Arrivals</Link>
+                        <Link to='/' className='Footer__text--link'>Deals</Link>
                     </div>
                 </section>
                 <section className='Footer__help Footer__section'>
                     <p className='Footer__headers'>Help</p>
                     <div className='Footer__texts--links'>
-                        <a href='/checkout' className='Footer__text--link'>Checkout</a>
-                        <a href='/basket' className='Footer__text--link'>Basket</a>
-                        <a href='/basket' className='Footer__text--link'>Shipping & Delivery</a>
-                        <a href='/basket' className='Footer__text--link'>Returns & Refunds</a>
+                        <Link to='/checkout' className='Footer__text--link'>Checkout</Link>
+                        <Link to='/basket' className='Footer__text--link'>Basket</Link>
+                        <Link to='/shipping' className='Footer__text--link'>Shipping & Delivery</Link>
+                        <Link to='/returns' className='Footer__text--link'>Returns & Refunds</Link>
                     </div>
                 </section>
                 <section className='Footer__newsletter Footer__section'>
