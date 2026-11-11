@@ -24,19 +24,20 @@ export const Navigation = () => {
   return (
     <AppBar position="sticky" className='Navigation'>
         <div className='Navigation__main'>
-            <a href='/' className='Navigation__brandLogo'>
-                <div className='Navigation__logo'>
+            <NavLink to="/" className="Navigation__brandLogo">
+                <div className="Navigation__logo">
                     <Icons.MainLogo />
                 </div>
-                <div className='Navigation__text'>
-                    <div className='Navigation__text--main'>
+
+                <div className="Navigation__text">
+                    <div className="Navigation__text--main">
                         ShopKart
                     </div>
-                    <div className='Navigation__text--other'>
+                    <div className="Navigation__text--other">
                         Online Store
                     </div>
                 </div>
-            </a>
+            </NavLink>
             <div className='Navigation__buttons'>
                 {buttons.map((btn) => (
                     <Button onClick={() => setActive(btn.id)} key={btn.id} component={NavLink} to={btn.to} className={`Navigation__text--buttons ${active == btn.id ? 'active' : ''}`} variant='text'> {btn.label} </Button>
