@@ -36,6 +36,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+      - run: cp dist/index.html dist/404.html
 
       - name: Upload build
         uses: actions/upload-pages-artifact@v4
