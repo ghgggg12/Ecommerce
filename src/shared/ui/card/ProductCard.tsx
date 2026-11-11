@@ -25,7 +25,7 @@ const usd = new Intl.NumberFormat('en-US', {
 export function ProductCard({ product }: ProductCardProps) {
     return (
         <div className="product__card">
-            <Link to={`/product/${product.id}`} className="product__link">
+            <Link to={`/product/${product.id}`} className="product__links product__card">
                 <div className="product__img--buttons">
                     {product.isNew && (
                         <p className="product__badge">New</p>
@@ -55,8 +55,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     </p>
                 </div>
             </Link>
-
-            <div className="product__actions">
+            <div className="product__buttons product__card">
                 <Button type="button" className="product__button--like product__button" aria-label="Add to favorites">
                     <Icons.LikeProductIcon />
                 </Button>
