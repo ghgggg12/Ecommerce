@@ -6,7 +6,7 @@ import { Main } from '@App/Main/index'
 
 export const Routes = createBrowserRouter([
     {
-        path: '/Ecommerce',
+        path: '/',
         element: <LayoutMain />,
         children: [
             { path: '/', element: <Main /> },
