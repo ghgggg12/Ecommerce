@@ -27,6 +27,16 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="product__card">
             <Link to={`/product/${product.id}`} className="product__links product__card">
                 <div className="product__img--buttons">
+                    <Button component={Link} to={`/product/${product.id}`} className="product__button--check product__button" aria-label="View product">
+                        <Icons.CheckProductIcon />
+                    </Button>
+
+                    <Link to='/'>
+                        <Button type="button" className="product__button--like product__button" aria-label="Add to favorites">
+                            <Icons.LikeProductIcon />
+                        </Button>
+                    </Link>
+
                     {product.isNew && (
                         <p className="product__badge">New</p>
                     )}
@@ -55,20 +65,10 @@ export function ProductCard({ product }: ProductCardProps) {
                     </p>
                 </div>
             </Link>
-            <div className="product__buttons product__card">
-                <Button type="button" className="product__button--like product__button" aria-label="Add to favorites">
-                    <Icons.LikeProductIcon />
-                </Button>
-
-                <Button component={Link} to={`/product/${product.id}`} className="product__button--check product__button" aria-label="View product">
-                    <Icons.CheckProductIcon />
-                </Button>
-
-                <Button type="button" className="product__button--basket" variant="contained" value={product.id} >
-                    <Icons.BasketIcon />
-                    <span>Add to Basket</span>
-                </Button>
-            </div>
+            <Button type="button" className="product__button--basket product__buttons" variant="contained" value={product.id} >
+                <Icons.BasketIcon />
+                <span>Add to Basket</span>
+            </Button>
         </div>
     );
 }
