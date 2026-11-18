@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import { NavLink } from 'react-router';
 import { useNav } from '@App/context/NavContext';
+import { Flex } from '@shared/ui/flex/Flex';
 
 import './Slider.css';
 
@@ -17,7 +18,7 @@ export const Slider = () => {
 
   return (
     <section className='Slider'>
-      <div className='Slider__slides'>
+      <Flex className='Slider__slides'>
         <Swiper
           loop={true}
           autoplay={{
@@ -27,11 +28,10 @@ export const Slider = () => {
           speed={900}
           modules={[ Autoplay, Pagination, A11y]}
           spaceBetween={0}
-          pagination={{ clickable: true }}
-        >
+          pagination={{ clickable: true }}>
           <SwiperSlide>
-            <div className='Slider__slide1'>
-              <div className='Slider__card'>
+            <Flex className='Slider__slide1' width='100%' height='580px'>
+              <Flex className='Slider__card' alignSelf='flex-end' flexDirection='column' height='auto' width='576px'>
                 <span className='Slider__discount'>
                   25% OFF
                 </span>
@@ -49,12 +49,12 @@ export const Slider = () => {
                 <Button onClick={() => setActive('collection')} component={NavLink} to='/collection' className="Slider__button" variant="contained">
                   Shop Now →
                 </Button>
-              </div>
-            </div>
+              </Flex>
+            </Flex>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='Slider__slide2'>
-              <div className='Slider__card'>
+            <Flex className='Slider__slide2' width='100%' height='580px'>
+              <Flex className='Slider__card' alignSelf='flex-end' flexDirection='column' height='auto' width='576px'>
                 <span className='Slider__discount'>
                   25% OFF
                 </span>
@@ -72,12 +72,12 @@ export const Slider = () => {
                 <Button onClick={() => setActive('collection')} component={NavLink} to='/collection' className="Slider__button" variant="contained">
                   Shop Now →
                 </Button>
-              </div>
-            </div>
+              </Flex>
+            </Flex>
           </SwiperSlide>
           <SwiperSlide>
-            <div className='Slider__slide3'>
-              <div className='Slider__card'>
+            <Flex className='Slider__slide3' width='100%' height='580px'>
+              <Flex className='Slider__card' alignSelf='flex-end' flexDirection='column' height='auto' width='576px'>
                 <span className='Slider__discount'>
                   29% OFF
                 </span>
@@ -95,11 +95,11 @@ export const Slider = () => {
                 <Button onClick={() => setActive('collection')} component={NavLink} to='/collection' className="Slider__button" variant="contained">
                   Shop Now →
                 </Button>
-              </div>
-            </div>
+              </Flex>
+            </Flex>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </Flex>
     </section>
   );
 };
