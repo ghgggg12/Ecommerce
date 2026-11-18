@@ -1,8 +1,9 @@
 body{
     height: auto;
     width: auto;
+    background-color: var(--background);
 }
 ::selection{
     color: white;
-    background-color: #008afc;
+    background-color: var(--chart-1);
 }

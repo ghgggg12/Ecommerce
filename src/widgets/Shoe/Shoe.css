@@ -1,0 +1,49 @@
+.Shoe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 1320px;
+    margin: var(--auto-margin);
+}
+.Shoe__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 88px 0 40px 0;
+}
+.Shoe__header{
+    font-family: var(--deafult-font);
+    font-weight: 400;
+    font-size: 30px;
+    text-transform:uppercase
+}
+.Shoe_text1{
+    color: #6b7280;
+}
+.Shoe_text2{
+    color: #374151;
+}
+.Shoe__text3{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.Shoe__about{
+    font-family: var(--deafult-font);
+    font-size: 16px;
+    color: rgba(78, 73, 73, 0.7);
+}
+.Shoe__line{
+    background-color: #000;
+    width: 40px;
+    height: 2px;
+}
+.Shoe__products--new{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 20px;
+    row-gap: 40px;
+}
