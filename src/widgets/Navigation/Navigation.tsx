@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { Icons } from '@shared/assets/svg/index';
 import { NavLink } from 'react-router';
 import { useNav } from '@App/context/NavContext';
+import { Flex } from '@shared/ui/flex/Flex'
 import AppBar from '@mui/material/AppBar';
 
 export const Navigation = () => {
@@ -23,7 +24,7 @@ export const Navigation = () => {
 
   return (
     <AppBar position="sticky" className='Navigation'>
-        <div className='Navigation__main'>
+        <Flex flexDirection='row' className='Navigation__main'>
             <NavLink to="/" className="Navigation__brandLogo">
                 <div className="Navigation__logo">
                     <Icons.MainLogo />
@@ -38,20 +39,20 @@ export const Navigation = () => {
                     </div>
                 </div>
             </NavLink>
-            <div className='Navigation__buttons'>
+            <Flex flexDirection='row' className='Navigation__buttons'>
                 {buttons.map((btn) => (
                     <Button onClick={() => setActive(btn.id)} key={btn.id} component={NavLink} to={btn.to} className={`Navigation__text--buttons ${active == btn.id ? 'active' : ''}`} variant='text'> {btn.label} </Button>
                 ))}
-            </div>
-            <div className='Navigation__buttons--other'>
+            </Flex>
+            <Flex className='Navigation__buttons--other'>
                 <Button className='Navigation__icons--buttons'>
                     <Icons.ThemeIcon />
                 </Button>
                 {otherButtons.map((btn) => (
                     <Button onClick={() => setActive(btn.id)} key={btn.id} component={NavLink} to={btn.to} className={`Navigation__icons--buttons ${active == btn.id ? 'active' : ''}`}> {btn.label} </Button>
                 ))}
-            </div>
-        </div>
+            </Flex>
+        </Flex>
     </AppBar>
   );
 };

@@ -1,5 +1,6 @@
 import { ProductCard } from '@shared/ui/card/ProductCard';
 import { useProducts } from '@shared/hooks/useProducts';
+import { Flex } from '@shared/ui/flex/Flex';
 import './Shoe.css';
 
 type ShoeProps = {
@@ -12,7 +13,7 @@ export const Shoe = ({category = 'mens-shoes', limit = 5}: ShoeProps) => {
 
     return (
         <section className='Shoe'>
-            <div className='Shoe__texts'>
+            <Flex flexDirection='column' alignItems='center' className='Shoe__texts'>
                 <h1 className='Shoe__header'>
                     <span className='Shoe_text1'>For</span>
                     &nbsp;
@@ -24,16 +25,16 @@ export const Shoe = ({category = 'mens-shoes', limit = 5}: ShoeProps) => {
                     </p>
                     <span className="Shoe__line" />
                 </div>
-            </div>
+            </Flex>
 
-            <div className='Shoe__products--new'>
+            <Flex flexWrap='wrap' justifyContent='flex-start' className='Shoe__products--new'>
                 {isLoading && <p className='Shoe__status'>Loading</p>}
                 {error && <p className='Shoe__status'>{error}</p>}
 
                 {!isLoading && !error && products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
-            </div>
+            </Flex>
         </section>
     );
 };

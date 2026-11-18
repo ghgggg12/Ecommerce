@@ -2,6 +2,7 @@
 import Button from '@mui/material/Button';
 import { Link } from 'react-router';
 import { Icons } from '@shared/assets/svg/index';
+import { Flex } from '@shared/ui/flex/Flex'
 import './ProductCard.css';
 
 export type Product = {
@@ -26,7 +27,7 @@ export function ProductCard({ product }: ProductCardProps) {
     return (
         <div className="product__card">
             <Link to={`/product/${product.id}`} className="product__links product__card">
-                <div className="product__img--buttons">
+                <Flex className="product__img--buttons">
                     <Button component={Link} to={`/product/${product.id}`} className="product__button--check product__button" aria-label="View product">
                         <Icons.CheckProductIcon />
                     </Button>
@@ -47,9 +48,9 @@ export function ProductCard({ product }: ProductCardProps) {
                             No foto
                         </p>
                     )}
-                </div>
+                </Flex>
 
-                <div className="product__texts">
+                <Flex flexDirection='column' className="product__texts">
                     <div className="product__text--main">
                         <h3 className="product__title">
                             {product.title}
@@ -63,7 +64,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     <p className="product__price">
                         {usd.format(product.priceCents / 100)}
                     </p>
-                </div>
+                </Flex>
             </Link>
             <Button type="button" className="product__button--basket product__buttons" variant="contained" value={product.id} >
                 <Icons.BasketIcon />

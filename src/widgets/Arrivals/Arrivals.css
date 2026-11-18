@@ -8,9 +8,6 @@
     margin: var(--auto-margin);
 }
 .Arrivals__texts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 40px 0;
 }
 .Arrivals__header{
@@ -41,9 +38,6 @@
     height: 2px;
 }
 .Arrivals__products--new{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     column-gap: 20px;
     row-gap: 40px;
 }
