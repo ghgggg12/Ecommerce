@@ -32,7 +32,6 @@
     background-image: var(--background-card1);
 }
 .product__img--buttons{
-    display: flex;
     border-radius: 16px 16px 0 0;
     position: relative;
     overflow: hidden;
@@ -101,8 +100,6 @@
     right: 30%;
 }
 .product__texts{
-    display: flex;
-    flex-direction: column;
     padding: 16px 16px 5px;
     row-gap: 40px;
 }
