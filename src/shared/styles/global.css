@@ -1,9 +1,0 @@
-body{
-    height: auto;
-    width: auto;
-    background-color: var(--background);
-}
-::selection{
-    color: white;
-    background-color: var(--chart-1);
-}
