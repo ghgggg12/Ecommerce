@@ -9,8 +9,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
 }
 .Navigation__main{
-    display: flex;
-    flex-direction: row;
     max-width: 1250px;
     margin: var(--auto-margin);
     column-gap: 242px;
@@ -55,8 +53,6 @@
     color: #62748e;
 }
 .Navigation__buttons{
-    display: flex;
-    flex-direction: row;
     flex: 1;
     justify-content: center;
     gap: 16px;
@@ -88,7 +84,6 @@
     opacity: 0;
 }
 .Navigation__buttons--other{
-    display: flex;
     gap: 16px;
 }
 .MuiButton-root.Navigation__icons--buttons{
