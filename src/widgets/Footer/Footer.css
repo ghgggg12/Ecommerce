@@ -16,7 +16,7 @@
     width: 100%;
 }
 .Footer__inner{
-    max-width: 1250px;
+    max-width: var(--auto-width);
     margin: var(--auto-margin);
 }
 .Footer__sections{
