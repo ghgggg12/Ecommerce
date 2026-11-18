@@ -1,5 +1,6 @@
 import { ProductCard } from '@shared/ui/card/ProductCard';
 import { useProducts } from '@shared/hooks/useProducts';
+import { Flex } from '@shared/ui/flex/Flex';
 import './Arrivals.css';
 
 type ArrivalsProps = {
@@ -12,7 +13,7 @@ export const Arrivals = ({category, limit = 12}: ArrivalsProps) => {
 
     return (
         <section className='Arrivals'>
-            <div className='Arrivals__texts'>
+            <Flex flexDirection='column' alignItems='center' className='Arrivals__texts'>
                 <h1 className='Arrivals__header'>
                     <span className='Arrivals_text1'>New</span>
                     &nbsp;
@@ -24,16 +25,16 @@ export const Arrivals = ({category, limit = 12}: ArrivalsProps) => {
                     </p>
                     <span className="Arrivals__line" />
                 </div>
-            </div>
+            </Flex>
 
-            <div className='Arrivals__products--new'>
+            <Flex flexWrap='wrap' justifyContent='center' className='Arrivals__products--new'>
                 {isLoading && <p className='Arrivals__status'>Loading</p>}
                 {error && <p className='Arrivals__status'>{error}</p>}
 
                 {!isLoading && !error && products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
-            </div>
+            </Flex>
         </section>
     );
 };
