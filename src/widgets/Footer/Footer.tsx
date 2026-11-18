@@ -83,9 +83,9 @@ export const Footer = () => {
                     © 2026 ShopSphere. All rights reserved.
                 </p>
                 <div className='Footer__buttons--privacy'>
-                    <a className='Footer__button' href='/'>Privacy</a>
-                    <a className='Footer__button' href='/'>Terms</a>
-                    <a className='Footer__button' href='/contact'>Contact</a>
+                    <Link to='/' className='Footer__button'>Privacy</Link>
+                    <Link to='/' className='Footer__button'>Terms</Link>
+                    <Link to='/' className='Footer__button'>Contact</Link>
                 </div>
             </Flex>
         </div>
