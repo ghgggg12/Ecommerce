@@ -1,0 +1,76 @@
+.Newsletter{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0 48px;
+    gap: 24px;
+}
+.Newsletter__header{
+    font-family: var(--deafult-font);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #0f172b;
+}
+.Newsletter__about{
+    font-family: var(--deafult-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #45556c;
+}
+
+.Newsletter__form{
+    display: flex;
+    width: 672px;
+    height: 84px;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: #000 0px 0px 0px 0px, #000 0px 0px 0px 0px, #000 0px 0px 0px 0px, #000 0px 0px 0px 0px, #00000016 0px 1px 3px 0px, #00000016 0px 1px 2px -1px;
+    background-color: #ffff;
+    gap: 12px;
+}
+.Newsletter__container--input{
+    height: 50px;
+    width: 100%;
+}
+.Newsletter__container--input svg{
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    color: #90a1b9;
+    object-fit: contain;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.Newsletter__input{
+    height: 100%;
+    width: 100%;
+    font-family: var(--deafult-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+    color: #0f172b;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #cad5e2;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+.Newsletter__input:focus{
+    border: 1px solid #2b7fff;
+    outline: none;
+}
+.MuiButton-root.Newsletter__button{
+    display: flex;
+    align-self: center;
+    padding: 12px 24px;
+    height: 36px;
+    border-radius: 10px;
+    font-family: var(--deafult-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-transform: none;
+}

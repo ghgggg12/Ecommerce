@@ -1,0 +1,100 @@
+.Whychoose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: var(--auto-width);
+    margin: var(--auto-margin);
+    padding: 64px 0;
+    row-gap: 54px;
+}
+.Whychoose__main{
+    row-gap: 12px;
+}
+.Whychoose__header{
+    font-family: var(--deafult-font);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #0f172b;
+}
+.Whychoose__about{
+    font-family: var(--deafult-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #45556c;
+}
+.Whychoose__cards{
+    gap: 24px;
+}
+.Whychoose__card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    padding: 56px 32px;
+    height: 307px;
+    width: 410.656px;
+    gap: 20px;
+}
+.Whychoose__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+}
+.Whychoose__texts--card{
+    row-gap: 8px;
+    margin-bottom: 4px;
+}
+.Whychoose__header--card{
+    font-family: var(--deafult-font);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #0f172b;
+}
+.Whychoose__about--card{
+    font-family: var(--deafult-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #45556c;
+}
+.Whychoose__buttons--card{
+    padding: 16px 0px 0px;
+    border-top: #e2e8f0 solid 1px;
+    width: 100%;
+}
+.MuiButton-root.Whychoose__button--card{
+    font-family: var(--deafult-font);
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #314158;
+    gap: 8px;
+}
+.MuiButton-root.Whychoose__button--card svg{
+    color: #62748e;
+    width: 16px;
+    height: 16px;
+}
+
+.Whychoose__icon1{
+    color: #155dfc;
+    background-color: #f1f5f9;
+}
+.Whychoose__icon2{
+    color: #9810fa;
+    background-color: #f1f5f9;
+}
+.Whychoose__icon3{
+    color: #009966;
+    background-color: #f1f5f9;
+}

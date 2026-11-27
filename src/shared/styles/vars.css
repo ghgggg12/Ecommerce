@@ -8,8 +8,9 @@
     --chart-2: #155dfc;
     --chart-3: #0f172b;
 
-    /*auto Margin*/
+    /*auto Center*/
     --auto-margin: 0 auto;
+    --auto-width: 1260px;
 
     /*Radius*/
     --border-radius: 3.35544e+07px; 

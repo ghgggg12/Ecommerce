@@ -27,7 +27,7 @@ export const Arrivals = ({category, limit = 12}: ArrivalsProps) => {
                 </div>
             </Flex>
 
-            <Flex flexWrap='wrap' justifyContent='center' className='Arrivals__products--new'>
+            <Flex flexWrap='wrap' justifyContent='flex-start' className='Arrivals__products--new'>
                 {isLoading && <p className='Arrivals__status'>Loading</p>}
                 {error && <p className='Arrivals__status'>{error}</p>}
 
